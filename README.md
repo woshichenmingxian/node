@@ -13,9 +13,15 @@
   - }
 }).listen(3000,fn);//启动端口号为3000的http服务
 
-
-
-
+## express 服务
+- let express=require('express');
+- let app=express();
+- app.listen(3000);//启动端口号为3000的http服务
+- app.use(function(req,res,next){xxxx//逻辑代码 next()});//中间件所有的请求都会进来
+   - 内置函数的next();代码是否往下继续执行；
+   - req,res模块内都是一同生效，所有设置的属性 在接口也可读取使用如:res.atrr=1
+- app.get('/index',function(req,res){xxxx//逻辑代码});//接口
+- app.post('/index',function(req,res){xxxx//逻辑代码});//接口
 
 ## req上的属性
 - req 为可读流，所有有可写读对的方法事件
