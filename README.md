@@ -12,9 +12,9 @@
 - res.write();//写入
 - res.end();//写入关闭
 - res.redirect('xxx');//重定向与xxx 等同于下
- - res.setHeader('Location','http://www.baidu.com');
- - res.statusCode=302;
- - res.end();
+   - res.setHeader('Location','http://www.baidu.com');
+   - res.statusCode=302;
+   - res.end();
 - res.setHeader('xxx','xxx');//设置请求头信息 
  - res.setHeader("Access-Control-Allow-Origin",'*');//允许跨域
  ...
