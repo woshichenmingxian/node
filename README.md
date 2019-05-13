@@ -1,13 +1,11 @@
 # node
 ## req上的属性
-、、、
 1.req.params:路径参数/use/:id/:name 查询站位符参数{id:xx,name:xxx}
 2.req.url:整个路径
 3.req.path:pathname路径
 4.req.hearders:请求头
 5.req.methods:请求的方法
 6.req.query 获取请求的参数问号后面的参数
-、、、
 
 ## middleWare 中间件
 - 中间件的作用
@@ -40,13 +38,13 @@ res.render('index',data)||res.render(require('path').join(__dirname,'path'),data
 、、、
 - ejs用法
 
-   、、、
+   
    - <%=变量%> 
    - <%-html%> 渲染html标签 
    - <%arr.map((item)=>{%>
       <li><%=item%></li>
      <%})%> 渲染循环
-   、、、
+   
 、、、
 ## 静态文件中间件
 参考staticWare文件
