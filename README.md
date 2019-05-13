@@ -1,5 +1,8 @@
 # node
 ## req上的属性
+- req 为可读流，所有有可写读对的方法事件
+- req.on('data',chunk=>{});//chunk为Buffer||String 传送的参数信息
+- req.on('end',()=>{});信息接收完毕
 - req.params:路径参数/use/:id/:name 查询站位符参数{id:xx,name:xxx}
 - req.url:整个路径
 - req.path:pathname路径
