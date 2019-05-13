@@ -24,5 +24,20 @@
 - res.sendStatus();发送状态码
 - res.send(); 发送
 
+## 路由拆分
+let express=require('express');
+let router=express().Router();
+router.get('/user',fn);
+app.use('/lo'.router);
+
+## bodyParser
+app.use(require(body-parser).urlencoded({extend:false}));//解析表单数据成json格式
+app.use(require(body-parser).json();//数据成json格式
+
+## ejs服务器渲染-前后端未分离
+app.set('view engine','html');//模板引擎 使用文件为html
+app.set('view','static');//文件夹路径变更 旧地址 新地址
+app.engine('html',require('ejs').__express);//默认使用模板为ejs文件 设置后使用html
+res.render('index',data)||res.render(require('path').join(__dirname,'path'),data);
 
    
