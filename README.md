@@ -44,6 +44,13 @@
    - res.end();
 - res.setHeader('xxx','xxx');//设置请求头信息 
  - res.setHeader("Access-Control-Allow-Origin",'*');//允许跨域
+ - express 下
+   - res.json({xxx});//返回json
+   - res.send(xxx);//会进行判别数字：状态码 ....
+   - res.sendFile(path);//传送文件
+      - 原始：html需要creatReadStream(path).pipe(res)
+   - res.sendStatus(200);//状态码
+      - 原始：res.statusCode res.end
  ...
 
 ## middleWare 中间件
