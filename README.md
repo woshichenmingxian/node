@@ -2,15 +2,15 @@
 ## http服务
 - let http =require('http');
 - http.createServer(function(req,res){
-   let {pathname,query}=require('url').parse(req.url,true);//解析路径和路径所带的参数（json）
-   //读取文件的时候 ，mime根据不同的文件类型设置不同类型的请求头
-    //res.setHeader('Content-type',reuqire('mime').getType(pathname)+';charset=utf-8');//mime要外包安装引入
-   //接口
-  if(pathname==='/addUser'){
-    ...//逻辑代码
-    res.end(xxx)
-    return
-  }
+   - let {pathname,query}=require('url').parse(req.url,true);//解析路径和路径所带的参数（json）
+   - //读取文件的时候 ，mime根据不同的文件类型设置不同类型的请求头
+   - //res.setHeader('Content-type',reuqire('mime').getType(pathname)+';charset=utf-8');//mime要外包安装引入
+   - //接口
+   - if(pathname==='/addUser'){
+     - ...//逻辑代码
+     - res.end(xxx)
+     - return
+  - }
 }).listen(3000,fn);//启动端口号为3000的http服务
 
 
