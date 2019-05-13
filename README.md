@@ -36,10 +36,10 @@
 - res.send(); 发送
 
 ## 路由拆分
-let express=require('express');
-let router=express().Router();
-router.get('/user',fn);
-app.use('/lo'.router);
+- let express=require('express');
+- let router=express().Router();
+- router.get('/user',fn);
+- app.use('/lo'.router);
 
 ## bodyParser
 app.use(require(body-parser).urlencoded({extend:false}));//解析表单数据成json格式
