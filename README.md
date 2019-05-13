@@ -1,6 +1,4 @@
 # node
-## node各模块简易学习理解资料与笔记
-
 ## req上的属性
 、、、
 1.req.params:路径参数/use/:id/:name 查询站位符参数{id:xx,name:xxx}
@@ -39,5 +37,14 @@ app.set('view engine','html');//模板引擎 使用文件为html
 app.set('view','static');//文件夹路径变更 旧地址 新地址
 app.engine('html',require('ejs').__express);//默认使用模板为ejs文件 设置后使用html
 res.render('index',data)||res.render(require('path').join(__dirname,'path'),data);
+、、、
+- ejs用法
+、、、
+<%=变量%> ||<%-html%> 渲染html标签 
+//渲染循环
+<%arr.map((item)=>{%>
+    <li><%=item%></li>
+<%})%>
 
-   
+## 静态文件中间件
+参考staticWare文件
