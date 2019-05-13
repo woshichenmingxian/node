@@ -39,12 +39,14 @@ app.engine('html',require('ejs').__express);//默认使用模板为ejs文件 设
 res.render('index',data)||res.render(require('path').join(__dirname,'path'),data);
 、、、
 - ejs用法
-、、、
-<%=变量%> ||<%-html%> 渲染html标签 
-//渲染循环
-<%arr.map((item)=>{%>
-    <li><%=item%></li>
-<%})%>
 
+   、、、
+   - <%=变量%> 
+   - <%-html%> 渲染html标签 
+   - <%arr.map((item)=>{%>
+      <li><%=item%></li>
+     <%})%> 渲染循环
+   、、、
+、、、
 ## 静态文件中间件
 参考staticWare文件
