@@ -2,7 +2,8 @@ class EventEmitter{
   constructor(){
     this._events={};//事件
   }
-
+  
+  //订阅
   on(eventName,callback){
     if(!this._events[eventName]){
       this._events[eventName]=[callback]
@@ -10,7 +11,8 @@ class EventEmitter{
       this._events[eventName].push(callback)
     }
   }
-
+  
+  //发布
   emit(eventName){
     if(this._events[eventName]){
       this._events[eventName].map(cb=>cb())
